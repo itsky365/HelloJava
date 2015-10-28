@@ -20,6 +20,10 @@ public class StringTest {
         System.out.printf("格式参数$的使用：%1$d, %2$s, %1$d %n", 99, "abc");
 
         Date date = new Date();
-        System.out.println(String.format("%tY年%tm月%td日 %tH时%tM分%tS秒", date, date, date, date, date, date));
+        System.out.println(String.format("%tY年 %tm月 %td日 %tH时 %tM分 %tS秒", date, date, date, date, date, date));
+        System.out.printf("== %1$tY年 %1$tm月 %1$td日 %1$tH时 %1$tM分 %1$tS秒 %n", date);
+
+        System.out.println("aabbccaaee".replaceAll("a", "AA"));
+        System.out.println("aabbccaaee".replaceFirst("a", "AA"));
     }
 }
